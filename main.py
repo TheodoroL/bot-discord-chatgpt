@@ -56,7 +56,7 @@ async def pergunta(mensagem, *pergunta):
 
     if len(config) > 40       :
         config.pop(0)
-    print(config)
+ 
 
 
 @client.command(name="pv")
@@ -77,6 +77,6 @@ async def pv (mensagem, *pergunta):
     
     if len(config) > 40:
         config.pop(0)
-    print(config)
+   
 
 client.run(DISORD_API)  
