@@ -1,4 +1,3 @@
-# import openai 
 from key import CHAGPT_API
 import requests as rg
 
@@ -14,7 +13,7 @@ def gerar_resposta(mensagem):
         "model": "gpt-3.5-turbo", 
         "messages": mensagem
     }
-    # body_josn = json.dumps(body)
+    
 
     requisisão = rg.post(link, headers= headers,json= body)
     resposta = requisisão.json()
